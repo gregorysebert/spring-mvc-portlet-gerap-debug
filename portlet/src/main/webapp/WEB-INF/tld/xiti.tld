@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+		version="2.0">
+		
+	<description>Tag xiti pour RPM</description>
+	<tlib-version>1.0</tlib-version>
+	<short-name>xiti</short-name>
+	<uri>/WEB-INF/tld/xiti</uri>
+	
+	<tag>
+		<description>Configure le script xiti pour le tracking des pages</description>
+		<name>xiti</name>
+		<tag-class>fr.gerap.rpm.transverse.tag.XitiTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<description>Nom de la page au format nom-adg::nom-jsp</description>
+			<name>xtPage</name>
+			<required>true</required>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<description>Affiche le script xiti pour le tracking des pages chargé en ajax</description>
+		<name>popin</name>
+		<tag-class>fr.gerap.rpm.transverse.tag.XitiPopinTag</tag-class>
+		<body-content>empty</body-content>
+		<attribute>
+			<description>Nom de la page au format nom-adg::nom-jsp</description>
+			<name>xtPage</name>
+			<required>true</required>
+		</attribute>
+	</tag>
+</taglib>
